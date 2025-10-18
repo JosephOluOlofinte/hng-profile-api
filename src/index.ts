@@ -28,6 +28,9 @@ app.use(requestLimit)
 app.use(express.json());
 
 // routes
+app.get('/', (req, res) => {
+  return res.json({ status: 'ok', message: 'Server is live' });
+});
 app.use('/me', profileController);
 
 // start server
