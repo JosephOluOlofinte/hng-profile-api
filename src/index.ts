@@ -1,6 +1,6 @@
 import dotenv from 'dotenv';
 dotenv.config();
-import express from 'express'
+import express, { Request, Response } from 'express'
 import cors from 'cors';
 import logger from 'morgan';
 import rateLimit from 'express-rate-limit'
@@ -28,7 +28,13 @@ app.use(requestLimit)
 app.use(express.json());
 
 // routes
-app.use('/me', profileController);
+app.get('/', (req: Request, res: Response) => {
+  return res.status(200).json({
+    status: 'success',
+    message: 'Health endpoint reached. Your Connection is strong'
+  })
+});
+app.get('/me', profileController);
 
 // start server
 app.listen(PORT, () => {
