@@ -6,7 +6,7 @@
   
     /* Modules */
     "module": "commonjs" /* Specify what module code is generated. */,
-    "rootDir": "./src" /* Specify the root folder within your source files. */,
+    "rootDir": "app" /* Specify the root folder within your source files. */,
     
     /* Emit */
     "outDir": "./dist/app" /* Specify an output folder for all emitted files. */,
