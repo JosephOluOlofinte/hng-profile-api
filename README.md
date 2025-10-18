@@ -57,22 +57,21 @@ npm start
 
 ## Dependencies
 
-1. Express
-2. Cors
-3. Axios
-4. Morgan
-5. Express Rate Limit 
-6. Dot Env
-7. TS Node
-8. Nodemon
-9. Typescript
-10. CopyFiles
+### 1. Express
+### 2. Cors
+### 3. Axios
+### 4. Morgan
+### 5. Express Rate Limit 
+### 6. Dot Env
+### 7. TS Node
+### 8. Nodemon
+### 9. Typescript
 
 ### How To Install Dependencies
 ```bash
 npm install express cors axios morgan express-rate-limit dotenv 
 
-npm install --save-dev @types/express @types/cors @types/morgan ts-node nodemon typescript copyfiles
+npm install --save-dev @types/express @types/cors @types/morgan ts-node nodemon typescript
 ```
 
 ---
