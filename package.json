@@ -1,11 +1,11 @@
 {
   "name": "hng-profile-api",
   "version": "1.0.0",
-  "main": "./src/index.ts",
+  "main": "./app/index.ts",
   "scripts": {
     "dev": "nodemon",
-    "build": "tsc",
-    "start": "node index.js"
+    "build": "npm install && tsc",
+    "start": "node dist/index.js"
   },
   "keywords": [],
   "author": "",
