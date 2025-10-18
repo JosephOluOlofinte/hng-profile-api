@@ -5,7 +5,6 @@ import cors from 'cors';
 import logger from 'morgan';
 import rateLimit from 'express-rate-limit'
 import { profileController } from './controllers/profile.controller';
-import { PORT } from './constants/env';
 
 
 const app = express();
@@ -37,6 +36,7 @@ app.get('/', (req: Request, res: Response) => {
 app.get('/me', profileController);
 
 // start server
+const PORT = process.env.PORT || 4060;
 app.listen(PORT, () => {
     console.log(`Connection healthy! Server running on port ${PORT}`);
 })
