@@ -1,6 +1,6 @@
 import dotenv from 'dotenv';
 dotenv.config();
-import express from 'express'
+import express, { Request } from 'express'
 import cors from 'cors';
 import logger from 'morgan';
 import rateLimit from 'express-rate-limit'
@@ -28,9 +28,6 @@ app.use(requestLimit)
 app.use(express.json());
 
 // routes
-app.get('/', (req, res) => {
-  return res.json({ status: 'ok', message: 'Server is live' });
-});
 app.use('/me', profileController);
 
 // start server
