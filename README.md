@@ -16,16 +16,14 @@ It fetches data from a public API, handles network errors, logs requests, suppor
 ---
 
 ## Folder Structure
-src/
-├── app.ts # Express app setup (middlewares, routes)
-├── server.ts # Server entry point
-├── controllers/
-│ └── dataController.ts
-├── routes/
-│ └── dataRoutes.ts
-├── utils/
-│ └── apiClient.ts # Axios instance and helper functions
-
+- src/
+- ├── constants/
+- │ └── env.ts
+- ├── controllers/
+- │ └── profile.controller.ts
+- ├── utils/
+- │ └── fetchCatFact.ts 
+- ├── index.ts 
 
 ---
 
@@ -75,7 +73,7 @@ npm install --save-dev @types/express @types/cors @types/morgan ts-node nodemon 
 ```
 
 ### ENV
-- PORT=3000
+- PORT=4050
 - EXTERNAL_API_URL=https://api.example.com/data
 
 These are exported in /src/constants/env.ts as constants
